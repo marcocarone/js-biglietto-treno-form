@@ -80,7 +80,6 @@ body {
   text-align: center;
 }
 
-
 .btn {
   background-color: #cccccc;
   border-radius: 5px;
@@ -153,6 +152,16 @@ body {
     font-size: 18px;
   }
 
+  .box-right__table {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .biglietto__box h5 {
+    padding-top: 0;
+  }
+
   .form__input {
     display: flex;
     flex-direction: column;
@@ -168,5 +177,19 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box-right__table {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 30px;
+  }
+  .biglietto h3 {
+      text-align: center;
+  }
+  .biglietto__box h5 {
+    padding-top: 10px;
   }
 }
