@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Form biglietto treno JS</title>
-  </head>
-  <body>
-    <main>
-      <div class="container">
-        <h1 class="style-h">Calcola il prezzo del tuo biglietto</h1>
-        <div class="form">
-          <div class="form__input">
-            <div class="input">
-              <label class="input__label" for="input-nome">Nome Cognome</label>
-              <input  id="input-nome" class="input__box" type="text" name="Nome Cognome" value="" placeholder="Inserisci il tuo nome">
-            </div>
-            <div class="input">
-              <label class="input__label" for="input-km">Km da percorrere</label>
-              <input id="input-km" class="input__box" type="number" name="Km tragitto" value="" placeholder="Inserisci i Km">
-            </div>
-            <div class="input">
-              <label class="input__label" for="input-eta">Fascia d'età</label>
-              <select id="input-eta" class="input__box" name="fascia età">
-                <option value="Minorenne">Minorenne</option>
-                <option value="Maggiorenne">Maggiorenne</option>
-                <option value="Over65">Over65</option>
-              </select>
-            </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Form biglietto treno JS</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1 class="style-h">Calcola il prezzo del tuo biglietto</h1>
+      <div class="form">
+        <div class="form__input">
+          <div class="input">
+            <label class="input__label" for="input-nome">Nome Cognome</label>
+            <input id="input-nome" class="input__box" type="text" name="Nome Cognome" value="" placeholder="Inserisci il tuo nome">
           </div>
-          <div class="form__btn">
-            <button id="genera" class="btn" type="button" name="Genera">Genera</button>
-            <button id="annulla" class="btn" type="button" name="Annulla">Annulla</button>
+          <div class="input">
+            <label class="input__label" for="input-km">Km da percorrere</label>
+            <input id="input-km" class="input__box" type="number" name="Km tragitto" value="" placeholder="Inserisci i Km">
+          </div>
+          <div class="input">
+            <label class="input__label" for="input-eta">Fascia d'età</label>
+            <select id="input-eta" class="input__box" name="fascia età">
+              <option value="Minorenne">Minorenne</option>
+              <option value="Maggiorenne">Maggiorenne</option>
+              <option value="Over65">Over65</option>
+            </select>
           </div>
         </div>
-        <h2 class="style-h">Il tuo biglietto</h2>
-        <div id="box-biglietto" class="biglietto hidden">
-          <h3>Dettaglio passeggeri</h3>
-          <div class="biglietto__box">
-            <div class="biglietto__box__left">
-              <h3>Nome passeggero</h3>
-              <h4 id="nome-passeggero"></h4>
+        <div class="form__btn">
+          <button id="genera" class="btn" type="button" name="Genera">Genera</button>
+          <button id="annulla" class="btn" type="button" name="Annulla">Annulla</button>
+        </div>
+      </div>
+      <h2 class="style-h">Il tuo biglietto</h2>
+      <div id="box-biglietto" class="biglietto hidden">
+        <h3>Dettaglio passeggeri</h3>
+        <div class="biglietto__box">
+          <div class="biglietto__box__left">
+            <h3>Nome passeggero</h3>
+            <h4 id="nome-passeggero"></h4>
+          </div>
+          <div class="biglietto__box__right">
+            <div class="box-right__table">
+              <h4>Offerta</h4>
+              <h5 id="tipologia-sconto"></h5>
             </div>
-            <div class="biglietto__box__right">
-              <div class="box-right__table">
-                <h4>Offerta</h4>
-                <h5 id="tipologia-sconto"></h5>
-              </div>
-              <div class="box-right__table">
-                <h4>Carrozza</h4>
-                <h5 id="carrozza"></h5>
-              </div>
-              <div class="box-right__table">
-                <h4>Codice CP</h4>
-                <h5 id="codice-cp"></h5>
-              </div>
-              <div class="box-right__table">
-                <h4>Costo Biglietto</h4>
-                <h5 id="costo-biglietto"></h5>
-              </div>
+            <div class="box-right__table">
+              <h4>Carrozza</h4>
+              <h5 id="carrozza"></h5>
+            </div>
+            <div class="box-right__table">
+              <h4>Codice CP</h4>
+              <h5 id="codice-cp"></h5>
+            </div>
+            <div class="box-right__table">
+              <h4>Costo Biglietto</h4>
+              <h5 id="costo-biglietto"></h5>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <script src="js/script.js" charset="utf-8"></script>
-  </body>
+    </div>
+  </main>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+
 </html>

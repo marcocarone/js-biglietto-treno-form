@@ -8,6 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #af1746;
   font-size: 16px;
+  min-width: 320px;
 }
 
 /* GENERALI */
@@ -87,8 +88,8 @@ body {
 }
 
 .btn:hover {
-  background-color: #a4a4a4;;
-
+  background-color: #a4a4a4;
+  ;
 }
 
 .biglietto {
@@ -112,6 +113,7 @@ body {
   padding-top: 20px;
   font-weight: 400;
 }
+
 .biglietto__box__left {
   background-color: grey;
   flex-basis: 20%;
@@ -139,4 +141,27 @@ body {
 .visibility {
   opacity: 1;
   transition: 0.4s;
+}
+
+@media screen and (max-width: 880px) {
+  body {
+    font-size: 18px;
+  }
+
+  .form__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .biglietto__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .biglietto__box__right {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 }
