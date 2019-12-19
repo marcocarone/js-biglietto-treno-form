@@ -13,17 +13,17 @@
         <h1 class="style-h">Calcola il prezzo del tuo biglietto</h1>
         <div class="form">
           <div class="form__input">
-            <div class="input__nome">
-              <label for="input-nome">Nome Cognome</label>
-              <input id="input-nome" type="text" name="Nome Cognome" value="" placeholder="Inserisci il tuo nome">
+            <div class="input">
+              <label class="input__label" for="input-nome">Nome Cognome</label>
+              <input  id="input-nome" class="input__box" type="text" name="Nome Cognome" value="" placeholder="Inserisci il tuo nome">
             </div>
-            <div class="input__km">
-              <label for="input-km">Km da percorrere</label>
-              <input id="input-km" type="number" name="Km tragitto" value="" placeholder="Inserisci i Km">
+            <div class="input">
+              <label class="input__label" for="input-km">Km da percorrere</label>
+              <input id="input-km" class="input__box" type="number" name="Km tragitto" value="" placeholder="Inserisci i Km">
             </div>
-            <div class="input__eta">
-              <label for="input-eta">Fascia d'età</label>
-              <select id="input-eta" class="" name="fascia età">
+            <div class="input">
+              <label class="input__label" for="input-eta">Fascia d'età</label>
+              <select id="input-eta" class="input__box" name="fascia età">
                 <option value="Minorenne">Minorenne</option>
                 <option value="Maggiorenne">Maggiorenne</option>
                 <option value="Over65">Over65</option>
@@ -31,8 +31,8 @@
             </div>
           </div>
           <div class="form__btn">
-            <button id="genera" type="button" name="Genera">Genera</button>
-            <button id="annulla" type="button" name="Annulla">Annulla</button>
+            <button id="genera" class="btn" type="button" name="Genera">Genera</button>
+            <button id="annulla" class="btn" type="button" name="Annulla">Annulla</button>
           </div>
         </div>
         <h2 class="style-h">Il tuo biglietto</h2>

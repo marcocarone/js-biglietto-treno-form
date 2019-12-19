@@ -35,9 +35,7 @@ body {
 }
 
 .form,
-.input__nome,
-.input__km,
-.input__eta,
+.input,
 .box-right__table {
   display: flex;
   flex-direction: column;
@@ -49,6 +47,48 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.input {
+  padding: 0 30px 30px 30px;
+}
+
+.input__label {
+  color: #af1746;
+  padding-bottom: 20px;
+}
+
+.input__box {
+  border-radius: 5px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 10px;
+  border: 1px solid #af1746;
+}
+
+.input__box:focus {
+  background-color: #af1746;
+  color: #ffffff;
+}
+
+.input__box:focus::placeholder {
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #cccccc;
+  border-radius: 5px;
+  border: 1px solid #a4a4a4;
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: #af1746;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a4a4a4;;
+
 }
 
 .biglietto {
@@ -68,6 +108,10 @@ body {
   border-bottom: 1px solid grey;
 }
 
+.biglietto__box h5 {
+  padding-top: 20px;
+  font-weight: 400;
+}
 .biglietto__box__left {
   background-color: grey;
   flex-basis: 20%;
@@ -79,7 +123,7 @@ body {
   justify-content: flex-start;
   flex-direction: row;
   flex-basis: 80%;
-  }
+}
 
 .box-right__table {
   flex-basis: 20%;
