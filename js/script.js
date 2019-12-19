@@ -30,6 +30,8 @@ btnGenera.addEventListener("click",
     document.getElementById("codice-cp").innerHTML = codiceCp;
     document.getElementById("box-biglietto").classList.remove ("hidden");
     document.getElementById("box-biglietto").classList.add ("visibility");
+    document.getElementById("titolo-box-biglietto").classList.remove ("hidden");
+    document.getElementById("titolo-box-biglietto").classList.add ("visibility");
   }
 );
 
@@ -41,5 +43,7 @@ btnAnnulla.addEventListener("click",
     document.getElementById("input-eta").value = "";
     document.getElementById("box-biglietto").classList.add ("hidden");
     document.getElementById("box-biglietto").classList.remove ("visibility");
+    document.getElementById("titolo-box-biglietto").classList.add ("hidden");
+    document.getElementById("titolo-box-biglietto").classList.remove ("visibility");
   }
 );
