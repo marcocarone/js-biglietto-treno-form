@@ -76,6 +76,11 @@ body {
   color: #ffffff;
 }
 
+.input__box::placeholder {
+  text-align: center;
+}
+
+
 .btn {
   background-color: #cccccc;
   border-radius: 5px;
