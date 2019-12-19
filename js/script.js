@@ -23,7 +23,7 @@ btnGenera.addEventListener("click",
       costoBiglietto = costoBiglietto - scontoQuaranta;
       tipologiaSconto = "Sconto Silver";
     }
-    document.getElementById("costo-biglietto").innerHTML = costoBiglietto.toFixed(2);
+    document.getElementById("costo-biglietto").innerHTML = costoBiglietto.toFixed(2) + "€";
     document.getElementById("nome-passeggero").innerHTML = nomeCognome;
     document.getElementById("tipologia-sconto").innerHTML = tipologiaSconto;
     document.getElementById("carrozza").innerHTML = carrozza;
