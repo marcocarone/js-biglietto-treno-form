@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #af1746;
+  font-size: 16px;
+}
+
+/* GENERALI */
+.style-h {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 2em;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.form,
+.biglietto {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  -webkit-box-shadow: 9px 10px 19px -10px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 9px 10px 19px -10px rgba(0, 0, 0, 0.67);
+  box-shadow: 9px 10px 19px -10px rgba(0, 0, 0, 0.67);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form,
+.input__nome,
+.input__km,
+.input__eta,
+.box-right__table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.biglietto {
+  display: flex;
+  flex-direction: column;
+}
+
+.biglietto h3 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.biglietto__box {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.biglietto__box__left {
+  background-color: grey;
+  flex-basis: 20%;
+  padding: 30px;
+}
+
+.biglietto__box__right {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-basis: 80%;
+  }
+
+.box-right__table {
+  flex-basis: 20%;
+  justify-content: flex-start;
+  padding: 30px;
+}
